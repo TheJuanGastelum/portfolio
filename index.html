@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Juan Gastelum</title>
 <meta name="description" content="Electrical Engineering student and Navy veteran — motorsports, embedded systems, and defense-adjacent project work.">
 <style>
@@ -26,7 +31,6 @@
   .mono{ font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace; }
   .wrap{ max-width:920px; margin:0 auto; }
 
-  /* title block, like an engineering drawing header */
   .titleblock{
     border:1px solid var(--line); background:var(--surface);
     display:grid; grid-template-columns:1fr auto; gap:0;
@@ -38,8 +42,6 @@
   .sub{ color:var(--ink-dim); margin-top:10px; font-size:14.5px; max-width:52ch; }
   .contact{ font-size:13px; color:var(--ink-dim); }
   .contact div{ margin-bottom:4px; }
-  .stamp{ border:1.5px solid var(--accent-2); color:var(--accent-2); font-size:11px; text-transform:uppercase;
-    letter-spacing:.08em; padding:4px 8px; align-self:flex-start; }
   @media (max-width:560px){ .titleblock{ grid-template-columns:1fr; } .titleblock .main{ border-right:none; border-bottom:1px solid var(--line);} }
 
   .now{
@@ -82,9 +84,9 @@
   footer{ margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-dim);
     display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
 </style>
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-
+</head>
+<body>
 <div class="wrap">
 
   <div class="titleblock">
@@ -94,7 +96,6 @@
       <div class="sub">U.S. Navy veteran (Cryptologic Technician, SIGINT) building toward motorsports and embedded-systems engineering. Hands-on with wiring harnesses, combat-robot electromechanical builds, and microcontroller integration.</div>
     </div>
     <div class="side">
-      <div class="stamp">TS/SCI (Add'l Caveats) · NATO Secret</div>
       <div class="contact mono">
         <div>Tucson, AZ</div>
         <div>(520) 848-8242</div>
@@ -190,7 +191,6 @@
       <tr><td>Programming</td><td>C (proficient), C++ (in progress)</td></tr>
       <tr><td>Hardware</td><td>Wiring-harness fabrication, soldering, electromechanical assembly and repair, embedded hardware integration</td></tr>
       <tr><td>Tools</td><td>RapidHarness (trained), Excel</td></tr>
-      <tr><td>Clearance</td><td>Active TS/SCI (additional caveats), NATO Secret</td></tr>
       <tr><td>Languages</td><td>English (native), Spanish (fluent)</td></tr>
     </table>
   </section>
@@ -206,3 +206,5 @@
     document.getElementById('upd').textContent = new Date().toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
   }catch(e){}
 </script>
+</body>
+</html>
